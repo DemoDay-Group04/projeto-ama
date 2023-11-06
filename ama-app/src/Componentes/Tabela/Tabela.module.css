@@ -1,0 +1,30 @@
+
+.containerLeft {
+    display: flex;
+    justify-content: space-between;
+    color: #401759;
+}
+
+.paciente {
+    text-align: center;
+    flex-grow: .5;
+}
+
+.containerRight {
+    flex-grow: .5;
+    display: flex;
+    justify-content: space-around;
+}
+
+.text {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+    .text {
+       font-size: 24px;
+       font-weight: normal;
+    }
+  }

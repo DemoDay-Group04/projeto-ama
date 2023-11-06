@@ -1,0 +1,12 @@
+.imagem {
+    float: inline-start;
+    width: 898px;
+    height: 898px;
+    background-image: url('./bolha.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    z-index: -10;
+    float: inline-start;
+}

@@ -1,9 +1,12 @@
+import Header from "../../Componentes/Header";
+import Navbar from "../../Componentes/Navbar";
 
 
 export default function Home () {
     return (
         <div>
-            <h1>Home</h1>
+            <Header />
+            <Navbar />
         </div>
     )
 }
