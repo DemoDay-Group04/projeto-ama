@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card-main {
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card{
+   background-color: #401759; 
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2rem;
+    border-radius: 60px;
+    box-shadow: 3px 9px 23px 0px rgba(0,0,0,0.75);
+
+}
+
+.esquerda {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    
+    
+}
+
+.esquerda input {
+    width: 180px;
+    height: 40px;
+    padding: 1rem;
+}
+
+.esquerda .descricao {
+    height: 120px;
+    padding-bottom: 4rem;
+}
+
+.direita {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.direita input, button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+}
+
+.direita button {
+    background-color: #F29CDE;
+    font-size: 20px;
+    font-weight: bold;
+    color: #401759;
+    
+    
+}
+
+.direita button:hover {
+    cursor: pointer;
+}
+
+
+
+input {
+    height: 25px;
+    width: 120px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.texto_ama{
+    color: white;
+    padding-bottom: 1rem;
+}
+.terapia{
+    color: white;
+    padding-bottom: 4rem;
+   
+}
+
+.familia{
+    color: white;
+    padding-bottom: rem;
+}
+.texto_familia{
+    color: white;
+    padding-bottom: 3rem;
+}
+
+.psico{
+    color: white;
+
+}
+.etica{
+    color: white;
+}
+.fechar_card{
+    position: absolute;
+    margin-left: 490px;
+    width: 70px;
+    margin-bottom: 80px;
+  bottom: 195px;
+}
+.topo{
+    bottom: 435px;
+}
