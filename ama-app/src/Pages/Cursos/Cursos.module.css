@@ -1,0 +1,52 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    padding: 1em;
+}
+
+
+.container_botao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_link {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.link {
+    display: block;
+    width: 180px;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 100px;
+    background-color: #F29CDE;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #401759;
+    box-shadow: 2px 6px 12px #00000040;
+}
+
+.container_cursos {
+    padding: 2em 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4em;
+}
+
+.novoCurso {
+    height: 250px;
+    width: 330px;
+    text-align: center;
+    padding: 10px;
+    background-color: #401759;
+    border-radius: 40px;
+}

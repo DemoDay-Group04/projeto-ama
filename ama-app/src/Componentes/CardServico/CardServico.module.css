@@ -1,0 +1,64 @@
+.container {
+    width: 605px;
+    height: 285px;
+    background-color: #401759;
+    border-radius: 75px;
+}
+
+.botaoFechar {
+    /* position: absolute;
+    left: 540px; */
+    float: inline-end;
+    background-color: #F29CDE;
+    border: none;
+    border-radius: 50%;
+    width: 83px;
+    height: 83px;
+    cursor: pointer;
+}
+
+.container_info {
+    display: flex;
+    padding: 2em 2em;
+    gap: 2em;
+}
+
+.titulo_descricao {
+    width: 60%;
+    color: #fff;
+}
+
+.descricao {
+    overflow-y: scroll;
+    height: 130px;
+}
+
+.info_text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 1em;
+}
+
+.info_text span {
+    display: block;
+    width: 100px;
+    text-align: center;
+    padding: .5em 1em;
+    background-color: #fff;
+    border-radius: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #401759;
+}
+
+.info_text button {
+    width: 150px;
+    background-color: #F29CDE;
+    border: none;
+    border-radius: 25px;
+    padding: .5em 1em;
+    font-size: 24px;
+    font-weight: bold;
+
+}

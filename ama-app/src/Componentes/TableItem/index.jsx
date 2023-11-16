@@ -3,7 +3,7 @@ import styles from './TableItem.module.css'
 import Modal from '../Modal'
 import { useEffect, useMemo, useState } from 'react'
 
-export default function TableItem({ imagem, nome, data, statusAtivo = true, dataConsulta, horaConsulta }) {
+export default function TableItem({ imagem, nome, data, statusAtivo = true, idade, email, dataConsulta, horaConsulta }) {
     const [modalAberto, setModalAberto] = useState(false)
 
     function openModal() {
@@ -12,20 +12,6 @@ export default function TableItem({ imagem, nome, data, statusAtivo = true, data
     function closeModal() {
         setModalAberto(false)
     }
-
-    // Usar um componente de imagem lazy load
-    const LazyImage = ({ src }) => {
-        const [carregada, setCarregada] = useState(false)
-
-        return (
-            <img
-                src={carregada ? src : null}
-                alt="Imagem da paciente"
-                onLoad={() => setCarregada(true)}
-            />
-        )
-    }
-
 
     return (
         <>
@@ -54,18 +40,24 @@ export default function TableItem({ imagem, nome, data, statusAtivo = true, data
                                 <img className={styles.imagem} src={imagem} alt="Imagem da paciente" />
                                 <h1 className={styles.nome}>{nome}</h1>
                             </div>
-                            {dataConsulta ?
-                                <div className={styles.proximaConsulta}>
-                                    <h1>Próxima consulta</h1>
-                                    <div className={styles.proximaConsultaData}>
-                                        <p>{dataConsulta}</p>
-                                        <p>{horaConsulta}</p>
+                            <div className={styles.maisInfo}>
+                                {dataConsulta ?
+                                    <div className={styles.proximaConsulta}>
+                                        <h1>Próxima consulta</h1>
+                                        <div className={styles.proximaConsultaData}>
+                                            <p>{dataConsulta}</p>
+                                            <p>{horaConsulta}</p>
+                                        </div>
+                                    </div> :
+                                    <div className={styles.proximaConsulta}>
+                                        <h1>Sem consultas agendadas</h1>
                                     </div>
-                                </div> :
-                                <div className={styles.proximaConsulta}>
-                                    <h1>Sem consultas agendadas</h1>
+                                }
+                                <div className={styles.maisInfo_text}>
+                                    <span>{idade} anos</span>
+                                    <span>{email}</span>
                                 </div>
-                            }
+                            </div>
                         </Modal>
                     </div>
                 )}

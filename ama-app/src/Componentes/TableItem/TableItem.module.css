@@ -111,6 +111,19 @@
    color: #401759;
 }
 
+.maisInfo {
+   display: flex;
+}
+
+.maisInfo_text {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 1em;
+   color: #401759;
+   font-size: 36px;
+}
+
  @media screen and (max-width: 800px) {
    .container {
       flex-direction: column;

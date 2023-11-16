@@ -1,0 +1,27 @@
+.container {
+    width: 350px;
+}
+
+.card_box {
+    height: 250px;
+    text-align: center;
+    padding: 10px;
+    background-color: #401759;
+    border-radius: 40px;
+}
+
+.card_box h1 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.card_box img {
+    width: 315px;
+    border-radius: 10px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 24px;
+    color: #401759;
+}
