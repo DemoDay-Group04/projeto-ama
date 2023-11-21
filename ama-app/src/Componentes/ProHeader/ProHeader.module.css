@@ -1,7 +1,6 @@
 .header {
     display: flex;
     align-items: center;
-    padding: 15px;
 }
 
 .header img {
@@ -14,7 +13,7 @@
 }
 
 .perfilInfo h1, h2 {
-    color: #401759;
+    color: #ffffff;
     margin: 2px 0;
 }
 
@@ -39,6 +38,6 @@
 }
 
 .icon h1 {
-    color: #401759;
+    color: #ffffff;
     font-size: 18px;
 }

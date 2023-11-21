@@ -1,7 +1,7 @@
 import { PiChatTeardropFill, PiCircleFill } from 'react-icons/pi'
 import styles from './TableItem.module.css'
 import Modal from '../Modal'
-import { useEffect, useMemo, useState } from 'react'
+import { useState } from 'react'
 
 export default function TableItem({ imagem, nome, data, statusAtivo = true, idade, email, dataConsulta, horaConsulta }) {
     const [modalAberto, setModalAberto] = useState(false)

@@ -1,15 +1,15 @@
 import {  useState  } from 'react'
 import styles from './NovoCardServico.module.css'
 
-export default function NovoCardServico() {
+export default function NovoCardServico({funcaoCriar}) {
     const [titulo, setTitulo] = useState('')
     const [descricao, setDescricao] = useState('')
     const [preco, setPreco] = useState(0)
     const [prazo, setPrazo] = useState('')
 
-
+    // futuramente a função deve ser passada no onSubmit
     return (
-        <div className={styles.container}>
+        <form className={styles.container}>
                 <div className={styles.titulo_descricao}>
                     <input 
                         className={styles.titulo}
@@ -44,8 +44,8 @@ export default function NovoCardServico() {
                         onChange={(e) => setPrazo(e.target.value)}
                     />
 
-                    <button>Salvar</button>
+                    <button onClick={funcaoCriar}>Salvar</button>
                 </div>
-        </div>
+        </form>
     )
 }

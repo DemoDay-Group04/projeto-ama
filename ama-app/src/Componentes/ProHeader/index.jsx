@@ -3,12 +3,12 @@ import { PiNutFill, PiFlagFill, PiSignOutBold } from "react-icons/pi";
 import styles from './ProHeader.module.css'
 import Estrelas from '../Estrelas'
 
-export default function ProHeader() {
+export default function ProHeader({cor}) {
 
     const estrelas = 4
 
     const iconPropos = {
-        color: '#401759',
+        color: cor,
         size: 65,
     }
 
@@ -16,27 +16,27 @@ export default function ProHeader() {
         <header className={styles.header}>
             <img src="https://thispersondoesnotexist.com" alt="Foto de perfil" />
             <div className={styles.perfilInfo}>
-                <h1>Amélia Barros</h1>
-                <h2>Psicologia</h2>
-                {estrelas?<Estrelas estrelas={estrelas} />:console.log('Sem estrelas no momento')}
+                <h1 style={{color: `${cor}`}}>Amélia Barros</h1>
+                <h2 style={{color: `${cor}`}}>Psicologia</h2>
+                {estrelas?<Estrelas estrelas={estrelas} cor='#ffffff'/>:console.log('Sem estrelas no momento')}
             </div>
             <div className={styles.icones}>
                 <Link className={styles.link}>
                     <div className={styles.icon}>
                         <PiNutFill {...iconPropos}/>
-                        <h1>Configurações de Perfil</h1>
+                        <h1 style={{color: `${cor}`}}>Configurações de Perfil</h1>
                     </div>
                 </Link>
-                <Link className={styles.link}>
+                <Link className={styles.link} to='/trabalhando'>
                     <div className={styles.icon}>
                         <PiFlagFill {...iconPropos}/>
-                        <h1>Suporte</h1>
+                        <h1 style={{color: `${cor}`}}>Suporte</h1>
                     </div>
                 </Link>
-                <Link className={styles.link}>
+                <Link className={styles.link} to='/'>
                     <div className={styles.icon}>
                         <PiSignOutBold {...iconPropos}/>
-                        <h1>Sair</h1>
+                        <h1 style={{color: `${cor}`}}>Sair</h1>
                     </div>
                 </Link>
             </div>

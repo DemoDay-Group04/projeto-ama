@@ -1,0 +1,23 @@
+
+.container_imagem {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagem {
+    width: 50%;
+    min-width: 500px;
+}
+
+.text {
+    color: #401759;
+    font-size: 32px;
+    width: 40%;
+    min-width: 500px;
+    text-align: center;
+}
+
+.link {
+    color: #401759;
+}

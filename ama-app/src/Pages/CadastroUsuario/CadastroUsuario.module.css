@@ -1,0 +1,16 @@
+.titulo{
+    color: #401759;
+    font-size: 48px;
+    margin-bottom: 1em;
+}
+
+.moldura {
+    width: 100%;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0;
+}

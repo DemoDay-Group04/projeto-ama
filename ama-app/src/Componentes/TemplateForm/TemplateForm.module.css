@@ -1,0 +1,100 @@
+
+.container {
+    width: 70%;
+}
+
+.campoTitulo {
+    margin: 10px 10px 20px;
+    color: #401759;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.campo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 5px;
+}
+
+.imagem {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: #401759;
+    margin-bottom: 1em;
+}
+
+.imagemInput {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.uploadIcon {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.nome {
+    flex-grow: 1;
+}
+
+.container_botao {
+    display: flex;
+    justify-content: center;
+}
+
+.profissaoLinha {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.certificadoInput {
+    width: 200px;
+    border-radius: 100px;
+    background-color: #401759;
+    text-align: center;
+    padding-bottom: 6px;
+}
+
+.certificadoInput h2 {
+    font-size: 18px;
+    color: #fff;
+}
+
+.certificadoInput input {
+    cursor: pointer;
+    opacity: 0;
+}
+
+.submit {
+    width: 330px;
+    height: 100px;
+    margin: 25px 0;
+    border: none;
+    border-radius: 100px;
+    background-color: #F29CDD;
+    color: #401759;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.submit:hover {
+    outline: 10px solid #F29CDD;
+    background-color: transparent;
+    color: #F29CDD;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+        text-align: center;
+    }
+    .campo {
+        justify-content: center;
+    }
+}

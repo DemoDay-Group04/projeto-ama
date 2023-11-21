@@ -1,0 +1,33 @@
+.container {
+    flex-grow: 1;
+}
+
+.input {
+    width: 100%;
+    background-color: #DEDEDE;
+    color: #7D7D7D;
+    /* padding: 20px 40px; */
+    padding:0 20px;
+    height: 60px;
+    border-radius: 100px;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.input:focus {
+    outline: 4px solid #401759;
+    color: #401759;
+}
+
+.aviso {
+    margin-left: 1em;
+    margin-bottom: .5em;
+    color: #CD0327;
+}
+
+@media screen and (max-width: 800px) {
+    .input {
+        width: 340px;
+    }
+}

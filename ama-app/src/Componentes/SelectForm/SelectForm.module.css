@@ -1,0 +1,26 @@
+.select {
+    background-color: #DEDEDE;
+    color: #7D7D7D;
+    width: 80%;
+    padding: 20px 40px;
+    border-radius: 100px;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.select:focus {
+    outline: 4px solid #401759;
+    color: #401759;
+}
+
+option {
+    color: #401759;
+    font-weight: bold;
+}
+
+.aviso {
+    margin-left: 1em;
+    color: #CD0327;
+    margin-bottom: .5em;
+}

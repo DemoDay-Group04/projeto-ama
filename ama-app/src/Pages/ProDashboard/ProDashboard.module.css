@@ -1,0 +1,12 @@
+.container {
+    padding: 1em;
+    background-image: linear-gradient(#401759, #1A0A23);
+}
+
+.container_menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    margin-top: 1em;
+}

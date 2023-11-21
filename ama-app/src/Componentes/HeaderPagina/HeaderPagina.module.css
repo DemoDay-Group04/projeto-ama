@@ -1,0 +1,14 @@
+.botaoTitulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 1em 4em;
+}
+
+.titulo {
+    flex-grow: 1;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #401759;
+    margin: 0px;
+}

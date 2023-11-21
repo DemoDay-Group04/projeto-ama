@@ -1,10 +1,12 @@
 import React from "react";
 import { PiStarFill } from "react-icons/pi";
 
-export default function Estrelas({ estrelas }) {
+// As estrelas devem receber uma propriedade de estrelas que representa o valor de avaliações vindo do backend e a cor em forma de string vindas do frontend
+
+export default function Estrelas({ estrelas, cor }) {
 
     const iconProps = {
-        color: '#401759',
+        color: cor,
         size: 24,
     }
 

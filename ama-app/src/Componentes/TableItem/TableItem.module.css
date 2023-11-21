@@ -54,13 +54,6 @@
     font-size: 32px;
  }
 
-.modalContainer {
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   position: absolute;
-   top: 40%;
-   left: 10%;
-}
-
 .modalFotoNome {
    display: flex;
    justify-content: space-between;

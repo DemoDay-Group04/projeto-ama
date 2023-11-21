@@ -1,0 +1,30 @@
+.link {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 260px;
+    background-color: #C4A8EF;
+    border-radius: 80px;
+    text-align: center;
+    transition: .5s ease-out;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 6px 12px #0000003a;
+}
+
+.icone {
+    width: 320px;
+}
+
+.titulo {
+    color: #401759;
+    font-size: 38px;
+}
