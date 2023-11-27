@@ -1,7 +1,7 @@
 import {  PiXBold  } from 'react-icons/pi'
 import styles from './Modal.module.css'
 
-export default function Modal ({children, onClose, pequeno}) {
+export default function Modal ({children, onClose, pequeno, flat}) {
 
     return (
         <dialog key="modal" open={!!children} className={styles.container} style={pequeno && {width: '1000px', height: '500px'}}>

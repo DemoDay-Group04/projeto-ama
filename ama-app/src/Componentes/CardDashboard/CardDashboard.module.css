@@ -9,10 +9,11 @@
     align-items: center;
     width: 550px;
     height: 260px;
-    background-color: #C4A8EF;
+    background-color: #F29CDE;
     border-radius: 80px;
     text-align: center;
     transition: .5s ease-out;
+    padding: 1em 0;
 }
 
 .container:hover {
@@ -27,4 +28,5 @@
 .titulo {
     color: #401759;
     font-size: 38px;
+    margin: 0;
 }

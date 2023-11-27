@@ -5,6 +5,8 @@ import HeaderPagina from '../../Componentes/HeaderPagina'
 
 export default function CadastroProfissional() {
 
+
+    
     return (
         <div className={styles.container}>
             <img className={styles.moldura} src={Belt} alt=""  style={{transform: 'rotate(3.142rad)'}} />

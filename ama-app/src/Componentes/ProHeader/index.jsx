@@ -3,7 +3,7 @@ import { PiNutFill, PiFlagFill, PiSignOutBold } from "react-icons/pi";
 import styles from './ProHeader.module.css'
 import Estrelas from '../Estrelas'
 
-export default function ProHeader({cor}) {
+export default function ProHeader({cor, imagem, nome, profissao}) {
 
     const estrelas = 4
 
@@ -14,10 +14,10 @@ export default function ProHeader({cor}) {
 
     return (
         <header className={styles.header}>
-            <img src="https://thispersondoesnotexist.com" alt="Foto de perfil" />
+            <img src={imagem} alt="Foto de perfil" />
             <div className={styles.perfilInfo}>
-                <h1 style={{color: `${cor}`}}>Amélia Barros</h1>
-                <h2 style={{color: `${cor}`}}>Psicologia</h2>
+                <h1 style={{color: `${cor}`}}>{nome}</h1>
+                <h2 style={{color: `${cor}`}}>{profissao}</h2>
                 {estrelas?<Estrelas estrelas={estrelas} cor='#ffffff'/>:console.log('Sem estrelas no momento')}
             </div>
             <div className={styles.icones}>

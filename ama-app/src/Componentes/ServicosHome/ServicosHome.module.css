@@ -1,0 +1,13 @@
+.container h1 {
+    color: #401759;
+    font: normal 10vw var(--displayFont);
+    margin: 0;
+}
+
+.container_servicos {
+    text-align: center;
+}
+
+.container_servicos img {
+    width: 85%;
+}

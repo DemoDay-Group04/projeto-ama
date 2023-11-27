@@ -12,6 +12,9 @@ import CadastroProfissional from './Pages/CadastroProfissional';
 import Page404 from './Pages/Page404';
 import PageConstruindo from './Pages/PageConstruindo';
 import ProDashboard from './Pages/ProDashboard';
+import UserDashboard from './Pages/UserDashboard';
+import Profissionais from './Pages/Profissionais';
+import BuscarProfissional from './Pages/BuscarProfissional';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +44,18 @@ const router = createBrowserRouter([
   {
     path: "/cursos",
     element: <Cursos />
+  },
+  {
+    path: "/dashboard-usuario",
+    element: <UserDashboard />
+  },
+  {
+    path: "/meus-cuidados",
+    element: <Profissionais />
+  },
+  {
+    path: "/buscar-profissional",
+    element: <BuscarProfissional />
   },
   {
     path: "/trabalhando",

@@ -1,0 +1,56 @@
+
+
+.container_profissionais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 150px;
+}
+
+.buscarProfissional {
+    width: 550px;
+    background-color: #401759;
+    box-shadow: 2px 6px 12px #0000003a;
+    padding: 1em;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.buscarProfissional:hover {
+    background-color: #270939;
+}
+
+.buscarProfissional h1 {
+    color: #fff;
+    font-size: 38px;
+}
+
+.semibolha {
+    float: right;
+    position: absolute;
+    left: -500px;
+    width: 898px;
+    height: 898px;
+    background-image: url('../../assets/semibolha.png');
+    background-repeat: no-repeat;
+    z-index: -10;
+    transform: rotate(3.142rad);
+}
+
+.conteudos_titulo {
+    margin-bottom: 60px;
+    text-align: center;
+    color: #401759;
+    font-size: 64px;
+}
+
+.container_cursos {
+    padding: 2em 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4em;
+}

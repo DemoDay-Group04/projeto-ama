@@ -7,6 +7,13 @@ import IconeServicos from '../../assets/servicos.png'
 import IconeAgenda from '../../assets/agenda.png'
 
 export default function ProDashboard() {
+    
+    const dados = {
+        id: 1,
+        imagem: 'https://thispersondoesnotexist.com',
+        nome: 'Amélia Barros',
+        profissao: 'Psicologia',
+    }
 
     const cards = [
         {
@@ -33,10 +40,17 @@ export default function ProDashboard() {
 
     return (
         <div className={styles.container}>
-            <ProHeader cor='#ffffff'/>
+            <ProHeader 
+                cor='#ffffff' 
+                imagem={dados.imagem} 
+                nome={dados.nome} 
+                profissao={dados.profissao}
+            />
+            
             <menu className={styles.container_menu}>
                 {cards.map((card) => (
                     <CardDashboard
+                        lilas
                         key={card.titulo}
                         caminho={card.caminho}
                         icone={card.icone}

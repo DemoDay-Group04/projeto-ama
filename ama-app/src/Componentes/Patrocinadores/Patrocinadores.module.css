@@ -1,0 +1,22 @@
+.container {
+    margin-top: 4em;
+}
+
+.container h1 {
+    text-align: center;
+    font: normal 10vw var(--displayFont);
+    color: #401759;
+    margin: 0;
+}
+
+.belt {
+    width: 100%;
+}
+
+.container_icones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3em 2em;
+    background-color: #401759;
+}

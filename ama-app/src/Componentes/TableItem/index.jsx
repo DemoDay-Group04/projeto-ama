@@ -2,6 +2,7 @@ import { PiChatTeardropFill, PiCircleFill } from 'react-icons/pi'
 import styles from './TableItem.module.css'
 import Modal from '../Modal'
 import { useState } from 'react'
+import Chat from '../Chat'
 
 export default function TableItem({ imagem, nome, data, statusAtivo = true, idade, email, dataConsulta, horaConsulta }) {
     const [modalAberto, setModalAberto] = useState(false)
@@ -57,6 +58,9 @@ export default function TableItem({ imagem, nome, data, statusAtivo = true, idad
                                     <span>{idade} anos</span>
                                     <span>{email}</span>
                                 </div>
+                            </div>
+                            <div>
+                                <Chat user='amelia'/>
                             </div>
                         </Modal>
                     </div>

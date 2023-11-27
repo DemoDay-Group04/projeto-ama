@@ -77,7 +77,6 @@
 .proximaConsulta {
    display: flex;
    flex-direction: column;
-   gap: 20px;
    width: 424px;
    height: 113px;
    background-color: #F29CDE;
@@ -106,6 +105,7 @@
 
 .maisInfo {
    display: flex;
+   margin-bottom: 2em;
 }
 
 .maisInfo_text {

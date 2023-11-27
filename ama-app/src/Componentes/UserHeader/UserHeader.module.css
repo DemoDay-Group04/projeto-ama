@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    width: 135px;
+    border-radius: 50%;
+}
+
+.perfilInfo {
+    padding-left: 10px;
+}
+
+.perfilInfo h1, h2 {
+    color: #401759;
+    margin: 2px 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.icones {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding: 0px 20px;
+}
+
+.icon {
+    padding: 10px 40px;
+    text-align: center;
+}
+
+.icon h1 {
+    color: #401759;
+    font-size: 18px;
+}

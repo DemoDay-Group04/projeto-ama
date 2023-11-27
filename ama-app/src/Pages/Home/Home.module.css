@@ -1,0 +1,11 @@
+
+.container_carrossel {
+    width: 90%;
+    height: 100vh;
+    text-align: center;
+    margin: 1em auto;
+}
+
+.container_conteudo {
+    padding: 0 2em;
+}

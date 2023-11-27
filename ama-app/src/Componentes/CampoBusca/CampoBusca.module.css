@@ -1,0 +1,65 @@
+
+
+.container_campoBusca {
+    display: flex;
+    align-items: center;
+}
+
+.container_buscaTitulo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 740px;
+    height: 85px;
+    background-color: #401759;
+    border-radius: 100px;
+}
+
+.buscaTitulo {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.container_filtrar button {
+    border: none;
+    background-color: transparent;
+}
+
+.container_modalFiltros {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.container_modalFiltros span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #401759;
+    margin-right: 1.5em;
+}
+
+.container_modalFiltros ul {
+    display: flex;
+    gap: 1em;
+    margin: 0;
+}
+
+.categoria {
+    margin: 0;
+    padding: .4em 1em;
+    border-radius: 25px;
+    background-color: #F29CDE;
+    color: #401759;
+    font-weight: bold;
+    box-shadow: 2px 6px 12px #0000003a;
+    cursor: pointer;
+    transition: .3 ease-out;
+}
+
+.categoria:hover {
+    background-color: #d966be;
+}

@@ -24,26 +24,27 @@ export default function Header() {
                 <button className={styles.button} onClick={openModal}>CADASTRAR</button>
             </div>
             {modalAberto &&
-                <Modal onClose={closeModal} pequeno>
-                    <h1 className={styles.modal_titulo}>Como deseja fazer parte?</h1>
-                    <div className={styles.container_link}>
-                        <Link to='/cadastro-usuario' className={styles.link}>
-                            <article className={styles.link_article}>
-                                <img src={Mae} alt="Icone de mãe"  className={styles.link_icone}/>
-                                <h2 className={styles.link_titulo}>Mãe, responsável ou altruista</h2>
-                                <p className={styles.link_text}>Doe, receba ou encontre profissionais para te ajudar</p>
-                            </article>
-                        </Link>
-
-                        <Link to='/cadastro-profissional' className={styles.link}>
-                            <article className={styles.link_article}>
-                                <img src={Profissional} alt="Icone profissional" className={styles.link_icone}/>
-                                <h2 className={styles.link_titulo}>Profissional de Saúde</h2>
-                                <p className={styles.link_text}>Pediatra, enfermeiro, psicologo, doula ou lactarista</p>
-                            </article>
-                        </Link>
-                    </div>
-                </Modal>
+                <div style={{zIndex: '10'}}>
+                    <Modal onClose={closeModal} pequeno>
+                        <h1 className={styles.modal_titulo}>Como deseja fazer parte?</h1>
+                        <div className={styles.container_link}>
+                            <Link to='/cadastro-usuario' className={styles.link}>
+                                <article className={styles.link_article}>
+                                    <img src={Mae} alt="Icone de mãe"  className={styles.link_icone}/>
+                                    <h2 className={styles.link_titulo}>Mãe, responsável ou altruista</h2>
+                                    <p className={styles.link_text}>Doe, receba ou encontre profissionais para te ajudar</p>
+                                </article>
+                            </Link>
+                            <Link to='/cadastro-profissional' className={styles.link}>
+                                <article className={styles.link_article}>
+                                    <img src={Profissional} alt="Icone profissional" className={styles.link_icone}/>
+                                    <h2 className={styles.link_titulo}>Profissional de Saúde</h2>
+                                    <p className={styles.link_text}>Pediatra, enfermeiro, psicologo, doula ou lactarista</p>
+                                </article>
+                            </Link>
+                        </div>
+                    </Modal>
+                </div>
             }
         </header>
     )

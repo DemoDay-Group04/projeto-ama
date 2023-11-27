@@ -1,0 +1,22 @@
+
+.container h1 {
+    color: #401759;
+    font: normal 10vw var(--displayFont);
+    margin: 0;
+}
+
+.container h2 {
+    color: #401759;
+    font-size: 52px;
+    font-weight: normal;
+}
+
+.container p {
+    font-size: 36px;
+    color: #401759;
+    margin: .5em 0;
+}
+
+.container img {
+    width: 100%;
+}
