@@ -40,7 +40,7 @@ export default function CampoBusca({textoDigitado, setTextoDigitado, filtraTexto
                         (
                             <button onClick={abreFiltro}>
                                 <MdFilterAlt color='#401759' size={50}/>
-                                <h2>Filtrar</h2>
+                                <h2>Filtros</h2>
                             </button>
                         ) :
                         (

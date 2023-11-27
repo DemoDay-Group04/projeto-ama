@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { createStandaloneToast } from '@chakra-ui/toast';
 import styles from './BuscarProfissional.module.css'
 import BolhaBackground from '../../Componentes/BolhaBackground'
 import BotaoRetorno from '../../Componentes/BotaoRetorno'
@@ -8,6 +9,8 @@ import {  servicos, conteudos  } from '../../Services/userServices'
 import CampoBusca from '../../Componentes/CampoBusca'
 
 export default function BuscarProfissional() {
+
+    const { toast } = createStandaloneToast()
 
     const listaPadrao = {
         servicosPremium: servicos.filter((servico) => servico.premium),
@@ -33,6 +36,23 @@ export default function BuscarProfissional() {
         const conteudoTextoFiltrado = conteudos.filter((conteudo) => {
             return conteudo.titulo.toLowerCase().includes(textoDigitado.toLowerCase())
         })
+
+        if(conteudoTextoFiltrado.length === 0 && 
+            servicoTextoFiltrado.servicosComum.length === 0 &&
+            servicoTextoFiltrado.servicosPremium.length === 0 ) {
+                const toastID = 'textError'
+                if (!toast.isActive(toastID)) {
+                    toast({
+                        id: toastID,
+                        title: 'Ops! Tem algo errado',
+                        description: "Não foi encontrado nada com esse título",
+                        status: 'error',
+                        variant: 'subtle',
+                        duration: 4000,
+                        isClosable: true,
+                      })
+                }
+            }
 
         setLista(servicoTextoFiltrado)
         setListaConteudos(conteudoTextoFiltrado)

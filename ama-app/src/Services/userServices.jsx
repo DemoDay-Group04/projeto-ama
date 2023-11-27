@@ -15,7 +15,7 @@ export const servicos = [
     {
         imagem: 'https://thispersondoesnotexist.com',
         nome: 'Rita de Cássia Neves',
-        profissao: 'Pediatra',
+        profissao: 'Pediatria',
         estrelas: 4.2,
         titulo: 'Consulta Pediátrica',
         preco: 130,
