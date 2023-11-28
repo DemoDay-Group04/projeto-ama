@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< Updated upstream
 import * as ReactDOM from "react-dom/client";
 import {createBrowserRouter,RouterProvider} from "react-router-dom";
 import { createStandaloneToast } from '@chakra-ui/toast';
@@ -15,6 +16,11 @@ import ProDashboard from './Pages/ProDashboard';
 import UserDashboard from './Pages/UserDashboard';
 import Profissionais from './Pages/Profissionais';
 import BuscarProfissional from './Pages/BuscarProfissional';
+=======
+import ReactDOM from 'react-dom/client'
+import './Estudio/Estu.modules.css'
+import Estudio from './Estudio/index.jsx'
+>>>>>>> Stashed changes
 
 const router = createBrowserRouter([
   {
@@ -71,7 +77,13 @@ const { ToastContainer, toast } = createStandaloneToast();
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+<<<<<<< Updated upstream
     <ToastContainer />
     <RouterProvider router={router}/>
+=======
+    <Estudio/>
+  
+
+>>>>>>> Stashed changes
   </React.StrictMode>,
 )
