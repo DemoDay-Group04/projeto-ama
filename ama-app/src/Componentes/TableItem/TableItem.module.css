@@ -108,13 +108,18 @@
    margin-bottom: 2em;
 }
 
+.container_nome {
+   flex-grow: 1;
+   color: #401759;
+   font-size: 36px;
+   padding: 1em;
+}
+
 .maisInfo_text {
    width: 100%;
    display: flex;
    justify-content: space-between;
-   padding: 1em;
-   color: #401759;
-   font-size: 36px;
+   margin-top: 1em;
 }
 
  @media screen and (max-width: 800px) {

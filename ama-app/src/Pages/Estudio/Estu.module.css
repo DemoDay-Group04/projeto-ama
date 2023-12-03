@@ -1,0 +1,261 @@
+.principal {
+    background-image: url(./Imagens/Fundo.png);
+    background-repeat: no-repeat;
+    background-size: 420px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cabecalho {
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.cabecalho h1 {
+    color: #401759;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+    font-weight: bold;
+    font-size: 52px;
+
+}
+
+.cabecalho button {
+    background-color: #F29CDE;
+    color: #401759;
+    border: none;
+    border-radius: 35px;
+    width: 165px;
+    height: 65px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+    font-weight: bold;
+    box-shadow: 7px 10px 23px -9px rgba(0, 0, 0, 0.75);
+    transition: 300ms all;
+}
+
+.cabecalho button:hover {
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+}
+
+
+.secao {
+    height: calc(100vh - 5rem);
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.esquerda {
+    background-color: white;
+    width: 55%;
+    height: 600px;
+    border-radius: 44px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 11px 21px -6px rgba(0, 0, 0, 0.75);
+}
+
+.secao input {
+    background-color: #DEDEDE;
+    border: none;
+    border-radius: 15px;
+    width: 350px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+    font-weight: bold;
+}
+
+
+.pequeno {
+    height: 50px;
+}
+
+
+
+.parte1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.parte1 input {
+    display: flex;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.grande {
+    background-color: #DEDEDE;
+    width: 350px;
+    height: 120px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    text-decoration: none;
+    color: #7D7D7D;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.grande img {
+    width: 60px;
+}
+
+.parte2 {
+    margin-top: 2rem;
+
+
+}
+
+.parte2 input {
+    width: 730px;
+    height: 180px;
+    padding-bottom: 160px;
+    padding-left: 10px;
+    font-size: 20px;
+
+}
+
+.parte3 {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.salvar_deco {
+    background-color: #F29CDE;
+    color: #401759;
+    border: none;
+    border-radius: 30px;
+    width: 140px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+    font-weight: bold;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+
+.esquerda_bo, .direita_bo {
+    width: 50px;
+}
+
+
+.botton_live {
+    background-color: #F29CDE;
+    color: #401759;
+    border: none;
+    border-radius: 55px;
+    width: 378px;
+    font-size: 30px;
+    font-weight: bold;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 20px;
+    opacity: 0.7;
+    transition: 300ms all;
+}
+
+.vermelho_live {
+    width: 40px;
+    height: 40px;
+
+}
+
+
+
+.botton_live:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.apagar_x {
+
+    width: 55px;
+    height: 58px;
+
+}
+
+
+.direita {
+    background-color: white;
+    width: 35%;
+    height: 600px;
+    box-shadow: 4px 11px 21px -6px rgba(0, 0, 0, 0.75);
+    border-radius: 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.card {
+    background-color: #DEDEDE;
+    display: flex;
+    flex-wrap: wrap;
+    width: 376px;
+    height: 160px;
+    border-radius: 25px;
+    color: #7D7D7D;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+    padding: 10px;
+    gap: 5px;
+    align-items: center;
+}
+
+.card .mulher_mae {
+    width: 180px;
+}
+
+.fechar {
+    width: 70px;
+    margin-left: 50px;
+    transition: 300ms all;
+}
+
+.fechar:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+.card p {
+    font-size: 24px;
+    margin-left: 40px;
+}
+
+.editar {
+    background-color: #F29CDE;
+    color: #401759;
+    border: none;
+    border-radius: 55px;
+    width: 110px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px;
+    margin-left: 100px;
+    transition: 300ms all;
+}
+
+.editar:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}

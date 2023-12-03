@@ -5,52 +5,27 @@ import BolhaBackground from '../../Componentes/BolhaBackground'
 import HeaderPagina from '../../Componentes/HeaderPagina'
 import CardProfissional from '../../Componentes/CardProfissional'
 import CardCurso from '../../Componentes/CardCurso';
+import {  servicos, conteudos  } from '../../Services/userServices'
 
 export default function Profissionais() {
 
-    const dados = [
-        {
-            imagem: 'https://thispersondoesnotexist.com',
-            nome: 'Amélia Barros',
-            profissao: 'Psicologia',
-            estrelas: 5,
-        },
-        {
-            imagem: 'https://thispersondoesnotexist.com',
-            nome: 'Fernanda Dias',
-            profissao: 'Lactarista',
-            estrelas: 5,
-        },
-        {
-            imagem: 'https://thispersondoesnotexist.com',
-            nome: 'André Pereira',
-            profissao: 'Enfermagem',
-            estrelas: 4,
-        },
-    ]
+    // por enquanto as duas constantes estão hard coded, mas devem vir da tabela usuários relacionando profissionais e serviços
+    const profissionaisAssinados = [1, 3, 5]
+    const conteudosAssinados = [3, 4, 2]
 
-    const conteudos = [
-        {
-            tipo: 'Curso',
-            imagem: 'https://atitudeenegocios.com/wp-content/uploads/2022/07/Como-elevar-a-autoestima.jpg',
-            titulo: 'Autoestima após a luz',
-        },
-        {
-            tipo: 'Curso',
-            imagem: 'https://www.fantasyorchestra.org/wp-content/uploads/sites/12/2014/06/20140712_124552-crop-1200-x-675.jpg',
-            titulo: 'Preparando uma educação não-violenta',
-        },
-        {
-            tipo: 'Workshop',
-            imagem: 'https://qgfeminista.org/wp-content/uploads/2021/12/imagem-site-1200-x-675-px.jpg',
-            titulo: 'Desafios da mãe solo',
-        },
-        {
-            tipo: 'Curso',
-            imagem: 'https://atitudeenegocios.com/wp-content/uploads/2022/07/Como-elevar-a-autoestima.jpg',
-            titulo: 'Instruções de pega',
-        },
-    ]
+    const profissionaisUsuario = profissionaisAssinados.map((profissional) => {
+        return servicos.filter((servico) => {
+            return servico.id === profissional
+        })
+    })
+
+    const conteudosUsuario = conteudosAssinados.map((conteudoAssinado) => {
+        return conteudos.filter((conteudo) => {
+            return conteudo.idConteudo === conteudoAssinado
+        })
+    })
+
+    console.log(conteudosUsuario[0][0].nome)
     return (
         <div>
             <BolhaBackground />
@@ -60,13 +35,13 @@ export default function Profissionais() {
                     <TbSearch color='#ffffff' size={130}/>
                     <h1>Encontre um Profissional</h1>
                 </Link>
-                {dados.map((dado) => (
+                {profissionaisUsuario.map((profissional) => (
                     <CardProfissional
-                        key={dado.nome}
-                        imagem={dado.imagem}
-                        nome={dado.nome}
-                        profissao={dado.profissao}
-                        estrelas={dado.estrelas}
+                        key={profissional[0].idServico}
+                        imagem={profissional[0].imagem}
+                        nome={profissional[0].nome}
+                        profissao={profissional[0].profissao}
+                        estrelas={profissional[0].estrelas}
                     />
                 ))}
             </div>
@@ -74,12 +49,12 @@ export default function Profissionais() {
             <div className={styles.container_conteudos}>
                 <h1 className={styles.conteudos_titulo}>Meus Conteúdos</h1>
                 <div className={styles.container_cursos}>
-                    {conteudos.map((conteudo) => (
+                    {conteudosUsuario.map((conteudo) => (
                         <CardCurso 
-                            key={conteudo.titulo}
-                            imagem={conteudo.imagem}
-                            tipo={conteudo.tipo}
-                            titulo={conteudo.titulo}
+                            key={conteudo[0].idConteudo}
+                            imagem={conteudo[0].imagemCapa}
+                            tipo={conteudo[0].tipo}
+                            titulo={conteudo[0].titulo}
                         />
                     ))}
                 </div>

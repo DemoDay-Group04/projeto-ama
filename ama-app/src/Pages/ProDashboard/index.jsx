@@ -5,15 +5,11 @@ import IconePacientes from '../../assets/pacientes.png'
 import IconeDesempenho from '../../assets/desempenho.png'
 import IconeServicos from '../../assets/servicos.png'
 import IconeAgenda from '../../assets/agenda.png'
+import {  servicos  } from '../../Services/userServices'
 
 export default function ProDashboard() {
-    
-    const dados = {
-        id: 1,
-        imagem: 'https://thispersondoesnotexist.com',
-        nome: 'Amélia Barros',
-        profissao: 'Psicologia',
-    }
+    const profissionalLogado = 1
+    const profissionalInfo = servicos.filter((servico) => servico.id === profissionalLogado)
 
     const cards = [
         {
@@ -32,9 +28,9 @@ export default function ProDashboard() {
             titulo: 'Serviços'
         },
         {
-            caminho: '/trabalhando',
+            caminho: '/agendamento-profissional',
             icone: IconeAgenda,
-            titulo: 'Agenda'
+            titulo: 'Minha Agenda'
         },
     ]
 
@@ -42,9 +38,9 @@ export default function ProDashboard() {
         <div className={styles.container}>
             <ProHeader 
                 cor='#ffffff' 
-                imagem={dados.imagem} 
-                nome={dados.nome} 
-                profissao={dados.profissao}
+                imagem={profissionalInfo[0].imagem} 
+                nome={profissionalInfo[0].nome} 
+                profissao={profissionalInfo[0].profissao}
             />
             
             <menu className={styles.container_menu}>

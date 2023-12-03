@@ -1,0 +1,64 @@
+.container {
+    width: 420px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 2px 6px 12px #0000003a;
+    padding: 1.5em 1.5em 3em;
+    text-align: center;
+}
+
+.container:hover {
+    background-color: #dedede;
+}
+
+.nomeInstituicao {
+    margin-bottom: 1em;
+}
+
+.nomeInstituicao h1 {
+    margin: 0;
+    color: #401759;
+}
+
+.nomeInstituicao h2 {
+    margin: 0;
+    color: #d966be;
+}
+
+.imagem {
+    border-radius: 50%;
+    width: 200px;
+}
+
+.doarText {
+    border-top: 1px solid #dedede;
+    padding-top: 1em;
+    color: #401759;
+    font-size: 24px;
+}
+
+.doarText span {
+    font-weight: bold;
+}
+
+.doarLink {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.doarLink h2 {
+    width: 200px;
+    background-color: #F29CDE;
+    color: #401759;
+    padding: 1em 0;
+    border-radius: 100px;
+    margin-bottom: 12px;
+}
+
+.doarLink:hover h2 {
+    border: 6px solid #F29CDE;
+    color: #F29CDE;
+    background-color: transparent;
+    margin-bottom: 0;
+}

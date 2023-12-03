@@ -4,37 +4,15 @@ import { PiPlusCircleFill } from "react-icons/pi";
 import BolhaBackground from '../../Componentes/BolhaBackground'
 import BotaoRetorno from '../../Componentes/BotaoRetorno'
 import CardCurso from '../../Componentes/CardCurso';
+import {  conteudos  } from '../../Services/userServices'
 
 export default function Cursos() {
 
     const ativo = {backgroundColor: '#401759', color: '#FFF', boxShadow: 'none'}
-    const dados = [
-        {
-            tipo: 'Curso',
-            imagem: 'https://atitudeenegocios.com/wp-content/uploads/2022/07/Como-elevar-a-autoestima.jpg',
-            titulo: 'Autoestima após a luz',
-        },
-        {
-            tipo: 'Curso',
-            imagem: 'https://www.fantasyorchestra.org/wp-content/uploads/sites/12/2014/06/20140712_124552-crop-1200-x-675.jpg',
-            titulo: 'Preparando uma educação não-violenta',
-        },
-        {
-            tipo: 'Workshop',
-            imagem: 'https://qgfeminista.org/wp-content/uploads/2021/12/imagem-site-1200-x-675-px.jpg',
-            titulo: 'Desafios da mãe solo',
-        },
-        {
-            tipo: 'Curso',
-            imagem: 'https://atitudeenegocios.com/wp-content/uploads/2022/07/Como-elevar-a-autoestima.jpg',
-            titulo: 'Instruções de pega',
-        },
-        {
-            tipo: 'Workshop',
-            imagem: 'https://qgfeminista.org/wp-content/uploads/2021/12/imagem-site-1200-x-675-px.jpg',
-            titulo: 'Mitos e verdades da amamentação',
-        },
-    ]
+
+    const conteudoProfissional = conteudos.filter((conteudo) => {
+        return conteudo.id === 1
+    })
 
     return (
         <div className={styles.container}>
@@ -47,11 +25,11 @@ export default function Cursos() {
                 </div>
             </div>
             <div className={styles.container_cursos}>
-                <Link to='' className={styles.novoCurso}>
+                <Link to='/estudio-de-criacao' className={styles.novoCurso}>
                     <PiPlusCircleFill size={240} color='#F29CDE'/>
                 </Link>
-                {dados.map((dado) => (
-                    <CardCurso tipo={dado.tipo} imagem={dado.imagem} titulo={dado.titulo}/>
+                {conteudoProfissional.map((dado) => (
+                    <CardCurso tipo={dado.tipo} imagem={dado.imagemCapa} titulo={dado.titulo}/>
                 ))}
             </div>
         </div>

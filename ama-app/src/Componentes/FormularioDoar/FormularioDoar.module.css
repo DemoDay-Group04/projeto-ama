@@ -1,0 +1,84 @@
+.formulario {
+    width: 70%;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background-color: #fff;
+    box-shadow: 2px 6px 12px #0000003a;
+    border-radius: 50px;
+    margin-bottom: 2em;
+}
+
+.titulo {
+    font: normal 48px var(--displayFont);
+    color: #401759;
+    margin: 0;
+}
+
+.container_botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container_botoes article{
+    text-align: center;
+    width: 400px;
+    border-radius: 140px;
+    padding: 1.5em;
+    font-size: 28px;
+    background-color: transparent;
+    border: 7px solid #401759;
+    font-weight: bold;
+    color: #401759;
+    cursor: pointer;
+}
+
+.ativo {
+    background-color: #401759;
+    color: #fff;
+}
+
+.container_endereco input {
+    width: 100%;
+    min-width: 400px;
+    padding: 1em 0 1em 20px;
+    border: none;
+    border-radius: 100px;
+    background-color: #DEDEDE;
+    color: #401759;
+    font-size: 28px;
+}
+
+.container_span {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container_span span {
+    color: #401759;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.botaoEnviar {
+    width: 400px;
+    border-radius: 140px;
+    padding: 1.5em;
+    align-self: center;
+    background-color: #F29CDE;
+    color: #401759;
+    border: none;
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 32px;
+    cursor: pointer;
+}
+.botaoEnviar:hover {
+    border: 7px solid #F29CDE;
+    background-color: transparent;
+    color: #F29CDE;
+}

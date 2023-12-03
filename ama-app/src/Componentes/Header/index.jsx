@@ -24,7 +24,7 @@ export default function Header() {
                 <button className={styles.button} onClick={openModal}>CADASTRAR</button>
             </div>
             {modalAberto &&
-                <div style={{zIndex: '10'}}>
+                <div style={{zIndex: '10', position: 'absolute',top: '25%' , left: '15%'}}>
                     <Modal onClose={closeModal} pequeno>
                         <h1 className={styles.modal_titulo}>Como deseja fazer parte?</h1>
                         <div className={styles.container_link}>

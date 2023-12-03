@@ -6,29 +6,24 @@ import IconeDoar from '../../assets/pacientes.png'
 import IconeReceber from '../../assets/pacientes.png'
 import IconeCuidados from '../../assets/agenda.png'
 import IconeProfissionais from '../../assets/servicos.png'
+import {  usuarios  } from '../../Services/profissionalServices'
 
 export default function UserDashboard() {
-    
-    const dados = {
-        id: 1,
-        imagem: 'https://thispersondoesnotexist.com',
-        nome: 'Sandra Alencar'
-    }
-
+    const usuarioLogado = usuarios.filter((usuario) => (usuario.id === 1))
 
     const cards = [
         {
-            caminho: '/trabalhando',
+            caminho: '/doar',
             icone: IconeDoar,
             titulo: 'Doar'
         },
         {
-            caminho: '/trabalhando',
+            caminho: '/doar-leite',
             icone: IconeReceber,
             titulo: 'Receber'
         },
         {
-            caminho: '/trabalhando',
+            caminho: '/agendamento-usuario',
             icone: IconeCuidados,
             titulo: 'Minha Agenda'
         },
@@ -43,7 +38,7 @@ export default function UserDashboard() {
     return (
         <div className={styles.container}>
             <BolhaBackground lilas/>
-            <UserHeader imagem={dados.imagem} nome={dados.nome}/>
+            <UserHeader imagem={usuarioLogado[0].imagem} nome={usuarioLogado[0].nome}/>
             <menu className={styles.container_menu}>
                 {cards.map((card) => (
                     <CardDashboard

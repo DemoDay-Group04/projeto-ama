@@ -27,6 +27,7 @@
 .container_filtrar button {
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .container_modalFiltros {

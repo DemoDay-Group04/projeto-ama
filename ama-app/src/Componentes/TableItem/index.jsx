@@ -4,7 +4,7 @@ import Modal from '../Modal'
 import { useState } from 'react'
 import Chat from '../Chat'
 
-export default function TableItem({ imagem, nome, data, statusAtivo = true, idade, email, dataConsulta, horaConsulta }) {
+export default function TableItem({ imagem, nomeCompleto, nome, data, statusAtivo = true, idade, email, dataConsulta, horaConsulta }) {
     const [modalAberto, setModalAberto] = useState(false)
 
     function openModal() {
@@ -54,9 +54,12 @@ export default function TableItem({ imagem, nome, data, statusAtivo = true, idad
                                         <h1>Sem consultas agendadas</h1>
                                     </div>
                                 }
-                                <div className={styles.maisInfo_text}>
-                                    <span>{idade} anos</span>
-                                    <span>{email}</span>
+                                <div className={styles.container_nome}>
+                                    <span>{nomeCompleto}</span>
+                                    <div className={styles.maisInfo_text}>
+                                        <span>{idade} anos</span>
+                                        <span>{email}</span>
+                                    </div>
                                 </div>
                             </div>
                             <div>

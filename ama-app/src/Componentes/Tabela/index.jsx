@@ -1,6 +1,7 @@
 import TableItem from '../TableItem'
 import styles from './Tabela.module.css'
-import {  pacientes  } from '../../Services/profissionalServices'
+import {  usuarios  } from '../../Services/profissionalServices'
+import {  agendamentos  } from '../../Services/profissionalServices'
 
 export default function Tabela() {
 
@@ -17,10 +18,11 @@ export default function Tabela() {
                 </div>
             </div>
             {
-                pacientes.map((paciente) => (
+                usuarios.map((paciente) => (
                     <TableItem 
-                        key={paciente.nome}
+                        key={paciente.id}
                         imagem={paciente.imagem}
+                        nomeCompleto={paciente.nomeCompleto}
                         nome={paciente.nome} 
                         data={paciente.data} 
                         statusAtivo={paciente.statusAtivo}

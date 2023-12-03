@@ -1,0 +1,16 @@
+.container_content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4em;
+    align-items: center;
+}
+
+.container_profissionais {
+    height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.container_calendario {
+    box-shadow: 2px 6px 12px #0000003a;
+}
