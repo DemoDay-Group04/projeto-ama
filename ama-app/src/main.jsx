@@ -24,6 +24,7 @@ import BancosAlimentos from './Pages/BancosAlimentos';
 import Estudio from './Pages/Estudio';
 import UserAgendamento from './Pages/UserAgendamento';
 import ProAgendamento from './Pages/ProAgendamento';
+import Gravidez from './Pages/Gravidez';
 
 const router = createBrowserRouter([
   {
@@ -89,6 +90,10 @@ const router = createBrowserRouter([
   {
     path: "/buscar-profissional",
     element: <BuscarProfissional />
+  },
+  {
+    path: "/player",
+    element: <Gravidez />
   },
   {
     path: "/trabalhando",

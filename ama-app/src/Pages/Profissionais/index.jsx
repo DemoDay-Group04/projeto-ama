@@ -1,5 +1,5 @@
 import styles from './Profissionais.module.css'
-import {  Link  } from 'react-router-dom'
+import {  Link, useNavigate  } from 'react-router-dom'
 import { TbSearch } from "react-icons/tb";
 import BolhaBackground from '../../Componentes/BolhaBackground'
 import HeaderPagina from '../../Componentes/HeaderPagina'
@@ -25,7 +25,8 @@ export default function Profissionais() {
         })
     })
 
-    console.log(conteudosUsuario[0][0].nome)
+    const navegar = useNavigate()
+
     return (
         <div>
             <BolhaBackground />
@@ -48,7 +49,7 @@ export default function Profissionais() {
             <div className={styles.semibolha}></div>
             <div className={styles.container_conteudos}>
                 <h1 className={styles.conteudos_titulo}>Meus Conteúdos</h1>
-                <div className={styles.container_cursos}>
+                <div className={styles.container_cursos} onClick={()=>navegar('/player')}>
                     {conteudosUsuario.map((conteudo) => (
                         <CardCurso 
                             key={conteudo[0].idConteudo}
