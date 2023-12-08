@@ -14,8 +14,8 @@ function Footer() {
                     <h1>Faça parte!</h1>
                     <ul>
                         <li><Link to='/cadastro-usuario'  className={styles.link}>Seja nosso doador</Link></li>
-                        <li><Link to='/cadastro-usuario'  className={styles.link}>Seja nosso receptor</Link></li>
-                        <li><Link to='/cadastro-profissional'  className={styles.link}>Seja nosso profissional</Link></li>
+                        <li><Link to='/dashboard-usuario'  className={styles.link}>Seja nosso receptor</Link></li>
+                        <li><Link to='/dashboard-profissional'  className={styles.link}>Seja nosso profissional</Link></li>
                     </ul>
                 </div>
                 <div className={styles.container_logo}>
