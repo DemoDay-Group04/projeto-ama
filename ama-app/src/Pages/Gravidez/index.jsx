@@ -4,7 +4,6 @@ import pequena from './image/pequena.png'
 import perfil from './image/perfil.png'
 import avaliar from './image/avaliacao.png'
 import baixar from './image/download.png'
-import BotaoRetorno from '../../Componentes/BotaoRetorno'
 import HeaderPagina from '../../Componentes/HeaderPagina'
 
 export default function Gravidez() {
@@ -63,7 +62,6 @@ export default function Gravidez() {
             </section>
             <div className={styles.round}>
                 <div className={styles.grupo}>
-                    <img className={styles.amelia} src={perfil} alt="mulher" />
                     <h3> Amélia Barros</h3>
                 </div>
 
