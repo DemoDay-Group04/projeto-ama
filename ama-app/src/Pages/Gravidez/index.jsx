@@ -1,7 +1,6 @@
 import styles from './Gravida.module.css'
 import mae from './image/mae.png'
 import pequena from './image/pequena.png'
-import perfil from './image/perfil.png'
 import avaliar from './image/avaliacao.png'
 import baixar from './image/download.png'
 import HeaderPagina from '../../Componentes/HeaderPagina'
