@@ -18,3 +18,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
+
+@media screen and (max-width: 800px) {
+    .link {font-size: 18px;}
+}

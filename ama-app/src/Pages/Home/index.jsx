@@ -1,3 +1,4 @@
+
 import styles from './Home.module.css';
 import Carrossel from "../../Componentes/Carrossel";
 import Header from "../../Componentes/Header";
@@ -13,7 +14,7 @@ export default function Home () {
     return (
         <div className={styles.container}>
             <Header />
-            <Navbar />
+            <Navbar/>
             <div className={styles.container_carrossel}>
                 <Carrossel />
             </div>

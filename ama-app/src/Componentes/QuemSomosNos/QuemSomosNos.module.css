@@ -13,18 +13,18 @@
 }
 
 .container_infos h1 {
-    font-size: 48px;
+    font-size: 6vw;
     margin: 0;
 }
 
 .container_infos span {
     font-family: var(--displayFont);
-    font-size: 180px;
+    font-size: 14vw;
     font-weight: normal;
 }
 
 .container_infos p {
     margin: 0;
-    width: 525px;
+    max-width: 525px;
     font-size: 36px;
 }

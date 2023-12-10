@@ -28,7 +28,7 @@ export default function Carrossel() {
                             src={item.image}
                             alt="Slider"
                             className="slideitem"
-                            width={1080}
+                            width='85%'
                         />
                     </SwiperSlide>
                 ))}

@@ -20,3 +20,9 @@
     padding: 3em 2em;
     background-color: #401759;
 }
+.container_icones img {
+    max-width: 299px;
+    width: 20%;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
